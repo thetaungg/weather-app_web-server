@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" href="/css/styles.css"> <!-- dir is relative from public folder-->
+        <title>Weather App</title>
+    </head>
+    <body>
+    <div class="page-content">
+        {{>header}} <!-- //hbs notation to access the values provided in app.js -->
+        <p>Get your weather information simply by entering your address</p>
+        <form>
+            <input placeholder="location" type="text">
+            <button>Search</button>
+        </form>
+        <div class="messages">
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+    </div>
+
+        {{>footer}}
+
+        <script src="js/index.js"></script>  <!--relative to public folder -->
+    </body>
+</html>
