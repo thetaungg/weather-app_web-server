@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "nodemon_start": "nodemon src/App.js -e js,hbs",
+    "dev_start": "nodemon src/App.js -e js,hbs",
     "start": "node src/App.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

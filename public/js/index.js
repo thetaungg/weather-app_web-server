@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit', (event) => {
     messageOne.textContent = 'Loading...';
     messageTwo.textContent = '';
 
-    fetch(`https://thet-weather-app.herokuapp.com/weather?address=${encodeURIComponent(location)}`)
+    fetch(`/weather?address=${encodeURIComponent(location)}`)
         .then(response => response.json())
         .then(data => {
             if (data.error){
