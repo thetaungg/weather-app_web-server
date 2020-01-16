@@ -97,6 +97,6 @@ app.get('*', (req, res) => { //* means default url page// if the url doesn't mat
     })
 });
 
-app.listen(3000, () => {
-    console.log('server is listening to port 3000')
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`server is listening to port ${process.env.PORT}`)
 });
